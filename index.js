@@ -55,3 +55,42 @@ cartaTabs.forEach((tab) => {
     // In a complete implementation, you would show/hide different carta sections here
   });
 });
+
+// Menu dots navigation
+const menuContainer = document.querySelector('.menu-scroll-container');
+const dots = document.querySelectorAll('.dot');
+const menuSections = document.querySelectorAll('.menu-section');
+
+function updateDots() {
+  const scrollPosition = menuContainer.scrollLeft;
+  const sectionWidth = menuContainer.clientWidth;
+  const currentSection = Math.round(scrollPosition / sectionWidth);
+
+  dots.forEach((dot, index) => {
+    if (index === currentSection) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+
+// Update dots on scroll
+menuContainer.addEventListener('scroll', updateDots);
+
+// Click on dots to scroll to section
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    const sectionWidth = menuContainer.clientWidth;
+    menuContainer.scrollTo({
+      left: sectionWidth * index,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Update dots on window resize
+window.addEventListener('resize', updateDots);
+
+// Initial dots update
+updateDots();

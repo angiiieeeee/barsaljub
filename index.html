@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <!-- Navigation -->
@@ -18,7 +18,6 @@
       <a href="#" class="logo">S'Aljub</a>
       <ul class="nav-links">
         <li><a href="#home">Inici</a></li>
-        <li><a href="#about">Nosaltres</a></li>
         <li><a href="#carta">Carta</a></li>
         <li><a href="#contact">Contacte</a></li>
         <li>
@@ -45,7 +44,9 @@
     >
       <section id="home" class="hero">
         <h1>Benvingut a S'Aljub</h1>
-        <p>Plaça de Pare Camps, 17, 07740 Es Mercadal, Illes Balears</p>
+        <div class="slogan">
+          <p>"It's only <span class="color-word">drinks</span> and <span class="color-word">tapas</span>, but I like it."</p>
+        </div>
         <a
           href="https://www.google.com/maps/place/S%E2%80%99Aljub/@39.9875247,4.091323,17z/data=!4m14!1m7!3m6!1s0x12be21c351908319:0x6f2b78c93cb2af2a!2zU-KAmUFsanVi!8m2!3d39.9875247!4d4.0939033!16s%2Fg%2F11s55lmwq7!3m5!1s0x12be21c351908319:0x6f2b78c93cb2af2a!8m2!3d39.9875247!4d4.0939033!16s%2Fg%2F11s55lmwq7?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw%3D%3D"
           class="cta-button"
@@ -54,78 +55,118 @@
       </section>
     </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2 class="section-title">Una mica de la nostra història</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            En un petit poble de Menorca, on el temps sembla anar més a poc a
-            poc i l’olor de mar es barreja amb el perfum de la terra roja, es
-            troba S’Aljub, un bar amb ànima i història. L’edifici que avui acull
-            el nostre local va ser, fa molts anys, un autèntic aljub, un dipòsit
-            d’aigua que proveïa els veïns i els animals del poble. Durant
-            dècades, va ser un lloc essencial per a la vida quotidiana, fins
-            que, amb l’arribada de l’aigua corrent, va caure en l’oblit. Però un
-            bon dia, en Toni “des Molí”, un menorquí enamorat de les tradicions,
-            va decidir donar-li una nova vida: transformar aquell vell aljub en
-            un lloc de trobada, on la gent pogués compartir rialles, històries i
-            bons moments. Així va néixer S’Aljub, un bar on la tradició es
-            barreja amb la modernitat, igual que els nostres còctels combinen
-            sabors de tota la vida amb tocs innovadors. La nostra carta està
-            inspirada en la cuina menorquina, amb tapes fetes amb productes de
-            proximitat i una selecció de begudes que va des de la clàssica
-            pomada fins a combinats creatius. Avui, S’Aljub continua sent el cor
-            del poble, un lloc on tothom és benvingut, ja sigui per prendre un
-            cafè al matí, unes tapes al vespre o un bon gin menorquí sota el cel
-            estrellat. Vine a descobrir l’essència de Menorca, vine a S’Aljub!
-          </p>
+    <!-- Carta Section -->
+    <section id="carta" class="carta">
+      <h2 class="section-title">La Nostra Carta</h2>
+      <div class="menu-scroll-container">
+        <div class="menu-container">
+          <div class="menu-section">
+            <h3>Begudes</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="item-name">Cervesa Artesanal</span>
+                <span class="item-price">4.50€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Vi de la Casa (Copa)</span>
+                <span class="item-price">3.50€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Gin Tonic Premium</span>
+                <span class="item-price">8.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Cafè Espresso</span>
+                <span class="item-price">2.00€</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section">
+            <h3>Entrants</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="item-name">Patates Braves</span>
+                <span class="item-price">6.50€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Croquetes de Formatge</span>
+                <span class="item-price">7.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Pulpo a la Gallega</span>
+                <span class="item-price">12.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Pa amb Tomàquet</span>
+                <span class="item-price">4.00€</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section">
+            <h3>Plats Principals</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="item-name">Fideuà de Marisc</span>
+                <span class="item-price">14.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Paella de Peix</span>
+                <span class="item-price">16.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Sopa de Peix</span>
+                <span class="item-price">10.00€</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Arròs Negre</span>
+                <span class="item-price">15.00€</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-image">
-          <img src="assets/saljub.png" alt="saljub" />
-        </div>
+      </div>
+      <div class="menu-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
     </section>
 
-    <!-- Carta Section -->
-    <section id="carta" class="carta">
+    <!-- Social Media Section -->
+    <section id="carta" class="carta xarxes ">
       <h2 class="section-title">Les nostres xarxes socials</h2>
-      <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-      <script
-        src="https://static.elfsight.com/platform/platform.js"
-        async
-      ></script>
-      <div
-        class="elfsight-app-13106e20-6b8d-47f4-96cb-f553dd3a6cb8"
-        data-elfsight-app-lazy
-      ></div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-      <div>
-        <h2 class="section-title">La Nostra Carta</h2>
-        <div class="testimonial-slider">
-          <div><img src="assets/carta.jpg" alt="carta" /></div>
-        </div>
+      <div class="instagram-embed-container">
+        <blockquote 
+          class="instagram-media" 
+          data-instgrm-permalink="https://www.instagram.com/baraljub/"
+          data-instgrm-version="14"
+          style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2 class="section-title">Contacta amb Nosaltres</h2>
-      <div class="contact-content">
+      <div class="contact-content font-bohemian">
         <div class="contact-info">
-          <h3>Contacte</h3>
+          <div class="color-word">
+            <h1>Contacte</h1>
+          </div>
           <div class="contact-details">
             <p>
-              <i>📍</i> Plaça de Pare Camps, 17, 07740 Es Mercadal, Illes
+               Plaça de Pare Camps, 17, 07740 Es Mercadal, Illes
               Balears
             </p>
-            <p><i>📞</i> (555) 123-4567</p>
-            <p><i>📧</i> info@theurbanbar.com</p>
+            <p> +34 666 666 666</p>
+            <p> saljub@gmail.com</p>
           </div>
-          <h3>Caixa de suggerències</h3>
+          
+          <div class="color-word">
+              <h3>Caixa de suggerències</h3>  
+          </div>
 
           <div class="form-group contact-form">
             <form action="https://formspree.io/f/xwpvgkey" method="POST">
@@ -145,16 +186,14 @@
             </form>
           </div>
         </div>
-        <div class="w-100">
-          <iframe
-            class="maps w-100 h-400px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.93648677375!2d4.091323012752182!3d39.987524671393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be21c351908319%3A0x6f2b78c93cb2af2a!2zU-KAmUFsanVi!5e0!3m2!1sca!2ses!4v1740565963914!5m2!1sca!2ses"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <iframe
+          class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.93648677375!2d4.091323012752182!3d39.987524671393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be21c351908319%3A0x6f2b78c93cb2af2a!2zU-KAmUFsanVi!5e0!3m2!1sca!2ses!4v1740565963914!5m2!1sca!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
@@ -163,5 +202,6 @@
       <p class="copyright">&copy; 2025 S'Aljub. All rights reserved.</p>
     </footer>
     <script src="index.js"></script>
+    <script src="instagram-feed.js"></script>
   </body>
 </html>
