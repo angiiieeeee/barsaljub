@@ -364,12 +364,14 @@ h1, h2, h3, .section-title {
   align-items: center;
   padding: 0.8rem 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  width: 100%;
 }
 
 .item-name {
   font-family: "Bohemian Typewriter", serif;
   font-size: 1.2rem;
   color: white;
+  flex: 1;
 }
 
 .item-price {
@@ -377,6 +379,7 @@ h1, h2, h3, .section-title {
   font-size: 1.2rem;
   color: var(--accent-color);
   margin-left: 1rem;
+  white-space: nowrap;
 }
 
 /* Testimonials Section */
